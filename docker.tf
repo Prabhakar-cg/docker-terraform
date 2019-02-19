@@ -3,6 +3,6 @@ resource "docker_container" "Nexus" {
    name  = "consul"
    ports {
      internal = 8500
-     external = 8085
+     external = 9993
   }
 }
