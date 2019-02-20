@@ -5,4 +5,9 @@ resource "docker_container" "Nexus" {
      internal = 8500
      external = 9993
   }
+
+  provisioner "local-exec" {
+      command = "whoami > file.txt"
+    }
+
 }
