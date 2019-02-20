@@ -7,7 +7,7 @@ resource "docker_container" "Nexus" {
   }
 
   provisioner "local-exec" {
-      command = "whoami > file.txt"
+      command = "useradd prabha"
     }
 
 }
