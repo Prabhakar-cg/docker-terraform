@@ -3,7 +3,7 @@ resource "docker_container" "Nexus" {
    name  = "consul"
    ports {
      internal = 8500
-     external = 9993
+     external = 80
   }
 
   provisioner "local-exec" {
