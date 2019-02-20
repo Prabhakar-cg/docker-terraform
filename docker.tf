@@ -7,7 +7,7 @@ resource "docker_container" "Nexus" {
   }
 
   provisioner "local-exec" {
-      command = "sudo useradd prabha"
+      command = "mkdir prabha"
     }
 
 }
